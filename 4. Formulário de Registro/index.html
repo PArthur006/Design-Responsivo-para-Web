@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulário de Registro</h1>
+    <p>Por favor, preencha o formulário com as informações necessárias.</p>
+    <form action="https://register-demo.freecodecamp.org" method="post">
+        <fieldset>
+            <label for="first-name">Primeiro Nome: 
+                <input type="text" id="first-name" required>
+            </label>
+            <label for="last-name">Sobrenome: 
+                <input type="text" id="last-name" required>
+            </label>
+            <label for="email">Email: 
+                <input type="email" id="email" required>
+            </label>
+            <label for="new-password">Crie Uma Nova Senha: 
+                <input type="password" id="new-password" required pattern="[a-z0-5]{8,}">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Tipo da Conta (obrigatório)</legend>
+            <label for="personal-account">
+                <input type="radio" id="personal-account" name="account-type" checked> Pessoal
+            </label>
+            <label for="business-account">
+                <input type="radio" id="business-account" name="account-type"> Empresarial
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="">
+                Envie um arquivo de foto:
+                <input type="file">
+            </label>
+        </fieldset>
+        <label for="terms-and-conditions">
+            <input type="checkbox" id="terms-and-conditions">
+            I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        </label>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
