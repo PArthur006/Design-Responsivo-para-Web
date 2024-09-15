@@ -12,35 +12,51 @@
     <form action="https://register-demo.freecodecamp.org" method="post">
         <fieldset>
             <label for="first-name">Primeiro Nome: 
-                <input type="text" id="first-name" required>
+                <input type="text" name="first-name" id="first-name" required>
             </label>
             <label for="last-name">Sobrenome: 
-                <input type="text" id="last-name" required>
+                <input type="text" id="last-name" name="last-name" required>
             </label>
             <label for="email">Email: 
-                <input type="email" id="email" required>
+                <input type="email" id="email" name="email"  required>
             </label>
             <label for="new-password">Crie Uma Nova Senha: 
-                <input type="password" id="new-password" required pattern="[a-z0-5]{8,}">
+                <input type="password" id="new-password" name="password" required pattern="[a-z0-5]{8,}">
             </label>
         </fieldset>
         <fieldset>
             <legend>Tipo da Conta (obrigatório)</legend>
             <label for="personal-account">
-                <input type="radio" id="personal-account" name="account-type" checked> Pessoal
+                <input type="radio" class="inline" id="personal-account" name="account-type" checked> Pessoal
             </label>
             <label for="business-account">
-                <input type="radio" id="business-account" name="account-type"> Empresarial
+                <input type="radio" class="inline" id="business-account" name="account-type"> Empresarial
             </label>
         </fieldset>
         <fieldset>
-            <label for="">
+            <label for="profile-picture">
                 Envie um arquivo de foto:
-                <input type="file">
+                <input type="file" id="profile-picture" name="profile-picture" >
+            </label>
+            <label for="age">
+                Insira sua Idade (em anos):
+                <input id="age" name="age" type="number" min="13" max="120">
+            </label>
+            <label for="referrer">Como você ouviu sobre nós? 
+                <select name="" id="referrer" name="referrer" >
+                    <option value="">(Escolha uma opção)</option>
+                    <option value="1">FreeCodeCamp News</option>
+                    <option value="2">Canal FreeCodeCamp do YouTube</option>
+                    <option value="3">FreeCodeCamp Fórum</option>
+                    <option value="4">Outro</option>
+                </select>
+            </label>
+            <label for="bio">Crie uma bio: 
+                <textarea name="bio" id="bio" cols="30" rows="3" placeholder=""></textarea>
             </label>
         </fieldset>
         <label for="terms-and-conditions">
-            <input type="checkbox" id="terms-and-conditions">
+            <input class="inline" type="checkbox" id="terms-and-conditions" name="terms" >
             I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
         </label>
         <input type="submit" value="Enviar">
