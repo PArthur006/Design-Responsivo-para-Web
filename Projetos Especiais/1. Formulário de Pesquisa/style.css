@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(0, 13, 56);
+    color: rgb(255, 255, 255);
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, p{
+    font-weight: 100;
+    text-align: center;
+}
+
+form {
+    background-color: rgb(18, 18, 83);
+    max-width: 500px;
+    min-width: 300px;
+    margin: 10px auto;
+    padding: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(1, 1, 122, 0.486);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 1.5rem 0;
+    font-size: 1.1rem;
+}
+
+#name, #email, #age, #dropdown {
+    width: 100%;
+    margin: 5px 0 0 0;
+    min-height: 3em;
+    border-radius: 5px;
+    border: none;
+}
+
+::placeholder {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    margin: 5px 0 0 0;
+    min-height: 1.1em;
+}
+
+textarea::placeholder {
+    padding: 5px;
+    font-size: 1.1em;
+    font-weight: 100;
+    resize: vertical;
+}
+
+#dropdown, ::placeholder {
+    color: rgba(19, 3, 163, 0.822);
+}
+
+fieldset {
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+#submit {
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    background-color: rgb(23, 255, 112);
+    border: none;
+    box-shadow: 3px 3px 3px rgba(0, 175, 0, 0.6);
+}
+
+#submit:hover {
+    background-color: rgb(0, 200, 100);
+    cursor: pointer;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de Pesquisa</title>
+</head>
+<body>
+    <h1 id="title">
+    Formulário de Pesquisa da FreeCodeCamp
+    </h1>
+    <p id="description">
+    Obrigado por reservar um tempo para nos ajudar a melhorar a plataforma
+    </p>
+    <!-- FORMULÁRIO -->
+    <form action="" id="survey-form">
+        <!-- DADOS PESSOAIS -->
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <!-- NOME -->
+             <label id="name-label" for="name"> Nome
+                <input type="text" id="name" required placeholder="Digite seu nome completo" autocomplete="name">
+            </label>
+            <!-- EMAIL -->
+            <label id="email-label" for="email"> Email
+                <input type="email" id="email" required placeholder="Insira seu Email" autocomplete="email">
+            </label>
+            <!-- IDADE -->
+            <label id="age-label" for="age"> Idade
+                <input type="number" name="age" id="age" min="12" max="111" placeholder="Sua Idade" autocomplete="bday">
+            </label>
+        </fieldset>
+
+        <!-- SITUAÇÃO ATUAL -->
+        <fieldset>
+            <legend>Sua situação atual</legend>
+            <select name="dropdown" id="dropdown"> 
+                <option value="0">Selecione sua função atual</option>
+                <option value="1">Estudando e Trabalhando</option>
+                <option value="2">Trabalhando Integralmente</option>
+                <option value="3">Estudando Integralmente</option>
+                <option value="4">Prefiro não Informar</option>
+            </select>
+        </fieldset>
+
+        <!-- RECOMENDAÇÃO -->
+        <fieldset>
+            <legend>Você recomendaria nossa plataforma para algum amigo?</legend>
+            <label for="recom-yes">
+                <input type="radio" id="recom-yes" value="Certamente" name="recommendation" checked> Certamente
+            </label>
+            <label for="recom-maybe">
+                <input type="radio" id="recom-maybe" value="Talvez" name="recommendation"> Talvez
+            </label>
+            <label for="recom-no">
+                <input type="radio" id="recom-no" value="Não" name="recommendation"> Não tenho Certeza
+            </label>
+        </fieldset>
+
+        <!-- CURSOS DESEJADOS -->
+        <fieldset>
+            <legend>Cursos Desejados</legend>
+            <label for="front-end">
+                <input type="checkbox" id="front-end" value="Front-End" name="courses"> Front-End
+            </label>
+            <label for="back-end">
+                <input type="checkbox" id="back-end" value="Back-End" name="courses"> Back-End
+            </label>
+            <label for="python">
+                <input type="checkbox" id="python" value="Python" name="courses"> Python
+            </label>
+            <label for="java">
+                <input type="checkbox" id="java" value="Java" name="courses"> Java
+            </label>
+        </fieldset>
+
+        <!-- COMENTÁRIO DO USUÁRIO -->
+        <fieldset>
+            <legend>Deixe abaixo um comentário: <em>(opcional)</em></legend>
+            <textarea name="Comments" id="comments" placeholder="Insira seu comentário aqui..." cols="30" rows="4"></textarea>
+        </fieldset>
+
+        <!-- BUTTON ENVIAR -->
+        <input type="submit" id="submit" value="Enviar" aria-label="Enviar formulário">
+    </form>
+</body>
+</html>
