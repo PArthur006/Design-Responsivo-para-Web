@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    background-color: #f5f6f7;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.header {
+    background-color: #0a0a23;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    border-bottom: 4px solid #fdb347;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.gallery {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    gap: 16px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery::after {
+    width: 350px;
+    content: "";
+}
+
